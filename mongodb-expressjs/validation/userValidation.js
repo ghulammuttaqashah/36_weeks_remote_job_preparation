@@ -1,8 +1,0 @@
-const {z}=require('zod');
-const userSchema=z.object({
-    name: z.string().min(1,'Name required'),
-    email: z.string().min(1,"Email required"),
-    username: z.string().min(1,'Username required')
-});
-
-module.exports=userSchema;
