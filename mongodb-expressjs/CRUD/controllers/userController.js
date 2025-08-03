@@ -80,6 +80,7 @@ const loginUser= async (req,res)=>{
             return res.status(401).json({message:"Invalid credentials"});
         }
 
+        //three parameters userID,secret key,expiration time
         const token=jwt.sign({userId:user._id},process.env.JWT_SECRET_KEY,{expiresIn:'10m'});
 
         res.cookie('token',token,{

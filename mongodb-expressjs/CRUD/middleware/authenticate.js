@@ -4,7 +4,7 @@ const authenticate=(req,res,next)=>
     {
         const token=req.cookies.token;
          if (!token){
-            return res.status(401).json({messgae:'access denied, no token'});
+            return res.status(401).json({messgae:'access denied, token not found'});
          }
 
          const JWT_SECRET_KEY=process.env.JWT_SECRET_KEY;
