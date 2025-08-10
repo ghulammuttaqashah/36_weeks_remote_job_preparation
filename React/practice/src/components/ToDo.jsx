@@ -13,6 +13,7 @@ function ToDo() {
     
     setTask("");
     setDue("");
+    
   };
 
   const deleteTask = (index) => {
@@ -56,6 +57,7 @@ function ToDo() {
             {todos.map((todo, index) => (
               <li
                 key={index}
+                
                 className="flex justify-between items-center bg-gray-50 p-3 rounded-lg shadow-sm hover:shadow-md transition"
               >
                 <div>
