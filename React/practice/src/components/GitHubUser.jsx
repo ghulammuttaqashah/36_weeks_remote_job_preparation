@@ -49,7 +49,7 @@ function GitHubUsers() {
 
       {isLoading && <p className="text-blue-600 font-semibold">Loading...</p>}
 
-      {!isLoading && users.length === 0 && searchTerm.trim() && (
+      {users.length === 0 && (
         <p className="text-gray-500 mt-4">No users found.</p>
       )}
 
